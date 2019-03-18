@@ -1,4 +1,4 @@
-package com.jkwy.ali.man;
+package com.tzj.ali.man;
 
 import android.app.Application;
 import android.text.TextUtils;

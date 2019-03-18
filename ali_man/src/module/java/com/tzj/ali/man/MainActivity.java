@@ -1,4 +1,4 @@
-package com.jkwy.ali.man;
+package com.tzj.ali.man;
 
 import android.app.Activity;
 import android.os.Bundle;

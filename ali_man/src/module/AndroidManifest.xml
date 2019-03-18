@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jkwy.ali.man">
+    package="com.tzj.ali.man">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,12 +14,12 @@
 
 
     <application
-        android:name="com.jkwy.ali.man.AliManApplication"
+        android:name=".AliManApplication"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true">
 
-        <activity android:name="com.jkwy.ali.man.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

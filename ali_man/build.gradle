@@ -79,5 +79,4 @@ android {
 }
 dependencies {
     implementation 'com.aliyun.ams:alicloud-android-man:1.2.4'
-//    implementation 'org.jetbrains:annotations-java5:15.0'
 }
