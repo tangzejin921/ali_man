@@ -28,7 +28,7 @@ allprojects {
 }
 
 
-rootProject.extensions.add("ali_man",Type.isAPP.name())
+rootProject.extensions.add("ali_man",Type.isModule.name())
 enum Type{
     isAPP,
     isModule,
