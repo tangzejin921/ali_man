@@ -15,7 +15,7 @@ public class AliManApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        init(this,getString(R.string.ali_man_appkey),getString(R.string.ali_man_appSecret));
+        init(this,getString(R.string.aliyun_key),getString(R.string.aliyun_secret));
     }
 
     public static void init(Application application, String appKey, String appSecret) {
@@ -31,7 +31,7 @@ public class AliManApplication extends Application {
             manService.getMANAnalytics().turnOffAutoPageTrack();
         }
         // 设置渠道（用以标记该app的分发渠道名称），如果不关心可以不设置即不调用该接口，渠道设置将影响控制台【渠道分析】栏目的报表展现。如果文档3.3章节更能满足您渠道配置的需求，就不要调用此方法，按照3.3进行配置即可；1.1.6版本及之后的版本，请在init方法之前调用此方法设置channel.
-        manService.getMANAnalytics().setChannel(application.getString(R.string.ali_man_channel));
+        manService.getMANAnalytics().setChannel(application.getString(R.string.aliyun_channel));
 
         if (TextUtils.isEmpty(appKey) && TextUtils.isEmpty(appSecret)) {
             // MAN初始化方法之一，从AndroidManifest.xml中获取appKey和appSecret初始化，若您采用上述 2.3中"统一接入的方式"，则使用当前init方法即可。
